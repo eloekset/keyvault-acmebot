@@ -30,7 +30,7 @@ param createWithKeyVault bool = true
 ])
 param keyVaultSkuName string = 'standard'
 
-@description('Enter the base URL of an existing Key Vault. (ex. https://example.vault.azure.net)')
+@description('Enter the base URL of an existing Key Vault.')
 param keyVaultBaseUrl string = ''
 
 var functionAppName = 'func-${appNamePrefix}-${substring(uniqueString(resourceGroup().id, deployment().name), 0, 4)}'
