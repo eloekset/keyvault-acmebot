@@ -127,7 +127,7 @@ resource functionApp 'Microsoft.Web/sites@2021-03-01' = {
         }
         {
           name: 'WEBSITE_RUN_FROM_PACKAGE'
-          value: 'https://stpubeivind.blob.core.windows.net/keyvault-acmebot/v4/latest.zip'
+          value: 'https://stpubeivind.blob.${environment().suffixes.storage}/keyvault-acmebot/v4/latest.zip'
         }
         {
           name: 'FUNCTIONS_EXTENSION_VERSION'

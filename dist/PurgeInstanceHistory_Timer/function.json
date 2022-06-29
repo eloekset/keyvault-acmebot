@@ -1,0 +1,21 @@
+{
+  "generatedBy": "Microsoft.NET.Sdk.Functions.Generator-4.1.1",
+  "configurationSource": "attributes",
+  "bindings": [
+    {
+      "type": "timerTrigger",
+      "schedule": "0 0 0 1 * *",
+      "useMonitor": true,
+      "runOnStartup": false,
+      "name": "timer"
+    },
+    {
+      "type": "durableClient",
+      "externalClient": false,
+      "name": "starter"
+    }
+  ],
+  "disabled": false,
+  "scriptFile": "../bin/KeyVault.Acmebot.dll",
+  "entryPoint": "KeyVault.Acmebot.Functions.PurgeInstanceHistory.Timer"
+}
