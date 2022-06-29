@@ -1,0 +1,23 @@
+{
+  "generatedBy": "Microsoft.NET.Sdk.Functions.Generator-4.1.1",
+  "configurationSource": "attributes",
+  "bindings": [
+    {
+      "type": "httpTrigger",
+      "route": "api/certificate/{certificateName}/revoke",
+      "methods": [
+        "post"
+      ],
+      "authLevel": "anonymous",
+      "name": "req"
+    },
+    {
+      "type": "durableClient",
+      "externalClient": false,
+      "name": "starter"
+    }
+  ],
+  "disabled": false,
+  "scriptFile": "../bin/KeyVault.Acmebot.dll",
+  "entryPoint": "KeyVault.Acmebot.Functions.RevokeCertificate.HttpStart"
+}
