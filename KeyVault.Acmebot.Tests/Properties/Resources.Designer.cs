@@ -247,5 +247,61 @@ namespace KeyVault.Acmebot.Tests.Properties {
                 return ResourceManager.GetString("NamecheapDomainsResponse_singlepage", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+        ///&lt;ApiResponse Status=&quot;OK&quot; xmlns=&quot;http://api.namecheap.com/xml.response&quot;&gt;
+        ///  &lt;Errors /&gt;
+        ///  &lt;Warnings /&gt;
+        ///  &lt;RequestedCommand&gt;namecheap.domains.dns.gethosts&lt;/RequestedCommand&gt;
+        ///  &lt;CommandResponse Type=&quot;namecheap.domains.dns.getHosts&quot;&gt;
+        ///    &lt;DomainDNSGetHostsResult Domain=&quot;example1.com&quot; EmailType=&quot;FWD&quot; IsUsingOurDNS=&quot;true&quot;&gt;
+        ///      &lt;host HostId=&quot;162122788&quot; Name=&quot;@&quot; Type=&quot;A&quot; Address=&quot;51.120.98.140&quot; MXPref=&quot;10&quot; TTL=&quot;1799&quot; AssociatedAppTitle=&quot;&quot; FriendlyName=&quot;&quot; IsActive=&quot;true&quot; [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string NamecheapGetHostsResponse_example1_com_sample1 {
+            get {
+                return ResourceManager.GetString("NamecheapGetHostsResponse_example1_com_sample1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+        ///&lt;ApiResponse xmlns=&quot;http://api.namecheap.com/xml.response&quot; Status=&quot;OK&quot;&gt;
+        ///  &lt;Errors /&gt;
+        ///  &lt;RequestedCommand&gt;namecheap.domains.dns.setHosts&lt;/RequestedCommand&gt;
+        ///  &lt;CommandResponse Type=&quot;namecheap.domains.dns.setHosts&quot;&gt;
+        ///    &lt;DomainDNSSetHostsResult Domain=&quot;example1.com&quot; IsSuccess=&quot;false&quot; /&gt;
+        ///  &lt;/CommandResponse&gt;
+        ///  &lt;Server&gt;SERVER-NAME&lt;/Server&gt;
+        ///  &lt;GMTTimeDifference&gt;+5&lt;/GMTTimeDifference&gt;
+        ///  &lt;ExecutionTime&gt;32.76&lt;/ExecutionTime&gt;
+        ///&lt;/ApiResponse&gt;
+        ///.
+        /// </summary>
+        internal static string NamecheapSetHostsResponse_example1_failure {
+            get {
+                return ResourceManager.GetString("NamecheapSetHostsResponse_example1_failure", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+        ///&lt;ApiResponse xmlns=&quot;http://api.namecheap.com/xml.response&quot; Status=&quot;OK&quot;&gt;
+        ///  &lt;Errors /&gt;
+        ///  &lt;RequestedCommand&gt;namecheap.domains.dns.setHosts&lt;/RequestedCommand&gt;
+        ///  &lt;CommandResponse Type=&quot;namecheap.domains.dns.setHosts&quot;&gt;
+        ///    &lt;DomainDNSSetHostsResult Domain=&quot;example1.com&quot; IsSuccess=&quot;true&quot; /&gt;
+        ///  &lt;/CommandResponse&gt;
+        ///  &lt;Server&gt;SERVER-NAME&lt;/Server&gt;
+        ///  &lt;GMTTimeDifference&gt;+5&lt;/GMTTimeDifference&gt;
+        ///  &lt;ExecutionTime&gt;32.76&lt;/ExecutionTime&gt;
+        ///&lt;/ApiResponse&gt;
+        ///.
+        /// </summary>
+        internal static string NamecheapSetHostsResponse_example1_success {
+            get {
+                return ResourceManager.GetString("NamecheapSetHostsResponse_example1_success", resourceCulture);
+            }
+        }
     }
 }

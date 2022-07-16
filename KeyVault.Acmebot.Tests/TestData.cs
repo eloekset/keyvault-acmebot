@@ -16,7 +16,9 @@ internal class TestData
     public const string NamecheapDomainsResponse_page2of3 = "NamecheapDomainsResponse_page2of3";
     public const string NamecheapDomainsResponse_page3of3 = "NamecheapDomainsResponse_page3of3";
     public const string NamecheapDomainsResponse_page4of3 = "NamecheapDomainsResponse_page4of3";
-
+    public const string NamecheapGetHostsResponse_example1_com_sample1 = "NamecheapGetHostsResponse_example1_com_sample1";
+    public const string NamecheapSetHostsResponse_example1_success = "NamecheapSetHostsResponse_example1_success";
+    public const string NamecheapSetHostsResponse_example1_failure = "NamecheapSetHostsResponse_example1_failure";
 
     public static string ReadResourceAsString(string resourceKey)
     {
