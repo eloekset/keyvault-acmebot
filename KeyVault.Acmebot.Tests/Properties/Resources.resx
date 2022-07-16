@@ -124,4 +124,31 @@
   <data name="DomeneShopDomainsResponse_sample1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DomeneShopDomainsResponse_sample1.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="NamecheapDomainsResponse_page1of2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NamecheapDomainsResponse_page1of2.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="NamecheapDomainsResponse_page1of3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NamecheapDomainsResponse_page1of3.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="NamecheapDomainsResponse_page2of2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NamecheapDomainsResponse_page2of2.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="NamecheapDomainsResponse_page2of3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NamecheapDomainsResponse_page2of3.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="NamecheapDomainsResponse_page3of2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NamecheapDomainsResponse_page3of2.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="NamecheapDomainsResponse_page3of3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NamecheapDomainsResponse_page3of3.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="NamecheapDomainsResponse_page4of3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NamecheapDomainsResponse_page4of3.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="NamecheapDomainsResponse_singlepage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NamecheapDomainsResponse_singlepage.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Namecheap_InvalidRequestIP_sample1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Namecheap_InvalidRequestIP_sample1.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
 </root>
