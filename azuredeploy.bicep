@@ -30,7 +30,7 @@ param createWithKeyVault bool = true
 ])
 param keyVaultSkuName string = 'standard'
 
-@description('Enter the base URL of an existing Key Vault. (ex. https://example.vault.azure.net)')
+@description('Enter the base URL of an existing Key Vault.')
 param keyVaultBaseUrl string = ''
 
 var functionAppName = 'func-${appNamePrefix}-${substring(uniqueString(resourceGroup().id, deployment().name), 0, 4)}'
@@ -127,7 +127,7 @@ resource functionApp 'Microsoft.Web/sites@2021-03-01' = {
         }
         {
           name: 'WEBSITE_RUN_FROM_PACKAGE'
-          value: 'https://shibayan.blob.core.windows.net/azure-keyvault-letsencrypt/v3/latest.zip'
+          value: 'https://stpubeivind.blob.${environment().suffixes.storage}/keyvault-acmebot/v4/latest.zip'
         }
         {
           name: 'FUNCTIONS_EXTENSION_VERSION'
