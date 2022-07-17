@@ -31,7 +31,7 @@ param createWithKeyVault bool = true
 ])
 param keyVaultSkuName string = 'standard'
 
-@description('Enter the base URL of an existing Key Vault. (ex. https://example.vault.azure.net)')
+@description('Enter the base URL of an existing Key Vault.')
 param keyVaultBaseUrl string = ''
 
 @description('Specifies additional name/value pairs to be appended to the functionap app appsettings.')
@@ -68,7 +68,7 @@ var acmebotAppSettings = [
   }
   {
     name: 'WEBSITE_RUN_FROM_PACKAGE'
-    value: 'https://stacmebotprod.blob.core.windows.net/keyvault-acmebot/v4/latest.zip'
+    value: 'https://stpubeivind2.blob.core.windows.net/keyvault-acmebot/v4/latest.zip'
   }
   {
     name: 'FUNCTIONS_EXTENSION_VERSION'
