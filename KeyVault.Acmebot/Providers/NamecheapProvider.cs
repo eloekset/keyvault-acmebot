@@ -16,7 +16,7 @@ public class NamecheapProvider : IDnsProvider
 {
     public const string NamecheapXmlNamespace = @"http://api.namecheap.com/xml.response";
     public const string Endpoint = @"https://api.namecheap.com/xml.response";
-    public const string IpfyOrgEndpoint = @"https://api.ipfy.org";
+    public const string IpfyOrgEndpoint = @"https://api.ipify.org";
     public const string ListDomainsCommand = "namecheap.domains.getList";
     public const string GetHostsCommand = "namecheap.domains.dns.getHosts";
     public const string SetHostsCommand = "namecheap.domains.dns.setHosts";
@@ -155,7 +155,7 @@ public class NamecheapProvider : IDnsProvider
         }
 
         // Parse Warnings
-        var warningElements = responseXml.SelectNodes(@"/nc:ApiResponse/nc:Warnings", nsMgr);
+        var warningElements = responseXml.SelectNodes(@"/nc:ApiResponse/nc:Warnings/nc:Warning", nsMgr);
 
         if (warningElements != null)
         {
