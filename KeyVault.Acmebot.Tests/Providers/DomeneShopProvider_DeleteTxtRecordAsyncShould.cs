@@ -17,12 +17,12 @@ using Newtonsoft.Json;
 using Xunit;
 
 namespace KeyVault.Acmebot.Tests.Providers;
-public class DomeneShopDnsProvider_DeleteTxtRecordAsyncShould
+public class DomeneShopProvider_DeleteTxtRecordAsyncShould
 {
     private DomeneShopProvider _provider;
     private readonly Mock<HttpMessageHandler> _mockHttpMessageHandler;
 
-    public DomeneShopDnsProvider_DeleteTxtRecordAsyncShould()
+    public DomeneShopProvider_DeleteTxtRecordAsyncShould()
     {
         var options = new DomeneShopOptions
         {

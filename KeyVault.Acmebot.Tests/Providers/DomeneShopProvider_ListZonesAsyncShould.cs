@@ -18,12 +18,12 @@ using Xunit;
 
 namespace KeyVault.Acmebot.Tests.Providers
 {
-    public class DomeneShopDnsProvider_ListZonesAsyncShould
+    public class DomeneShopProvider_ListZonesAsyncShould
     {
         private DomeneShopProvider _provider;
         private readonly Mock<HttpMessageHandler> _mockHttpMessageHandler;
 
-        public DomeneShopDnsProvider_ListZonesAsyncShould()
+        public DomeneShopProvider_ListZonesAsyncShould()
         {
             var options = new DomeneShopOptions
             {
