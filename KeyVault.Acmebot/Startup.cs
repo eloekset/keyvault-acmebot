@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net.Http;
 
 using Azure.Core;
 using Azure.Identity;
@@ -95,7 +96,7 @@ public class Startup : FunctionsStartup
             dnsProviders.TryAdd(options.AzurePrivateDns, o => new AzurePrivateDnsProvider(o, environment, credential));
             dnsProviders.TryAdd(options.Cloudflare, o => new CloudflareProvider(o));
             dnsProviders.TryAdd(options.CustomDns, o => new CustomDnsProvider(o));
-            dnsProviders.TryAdd(options.DomeneShop, o => new DomeneShopProvider(o));
+            dnsProviders.TryAdd(options.DomeneShop, o => new DomeneShopProvider(o, HttpClientFactory.Create()));
             dnsProviders.TryAdd(options.DnsMadeEasy, o => new DnsMadeEasyProvider(o));
             dnsProviders.TryAdd(options.Gandi, o => new GandiProvider(o));
             dnsProviders.TryAdd(options.GoDaddy, o => new GoDaddyProvider(o));

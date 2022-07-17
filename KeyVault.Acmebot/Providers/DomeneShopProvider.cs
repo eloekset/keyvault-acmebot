@@ -16,13 +16,10 @@ public class DomeneShopProvider : IDnsProvider
     private const string Endpoint = @"https://api.domeneshop.no/v0/";
     private const string AuthorizationHeader = @"Authorization";
 
-    public DomeneShopProvider(DomeneShopOptions options)
+    public DomeneShopProvider(DomeneShopOptions options, HttpClient httpClient)
     {
-        _httpClient = new HttpClient
-        {
-            BaseAddress = new Uri(Endpoint)
-        };
-
+        _httpClient = httpClient;
+        _httpClient.BaseAddress = new Uri(Endpoint);
         _httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
         _httpClient.DefaultRequestHeaders.TryAddWithoutValidation(AuthorizationHeader, CreateAuthorizationHeader(options));
 
@@ -47,14 +44,7 @@ public class DomeneShopProvider : IDnsProvider
         response.EnsureSuccessStatusCode();
 
         var domains = await response.Content.ReadAsAsync<DomeneShopDomain[]>();
-        var zones = domains.Select(d =>
-            new DnsZone(this)
-            {
-                Id = d.Id,
-                Name = d.Domain,
-                NameServers = d.Nameservers
-            })
-            .ToArray();
+        var zones = domains.Select(d => d.ToDnsZone(this)).ToArray();
 
         return zones;
     }
@@ -100,6 +90,16 @@ public class DomeneShopProvider : IDnsProvider
         public string Domain { get; set; }
         public string Id { get; set; }
         public string[] Nameservers { get; set; }
+
+        public DnsZone ToDnsZone(IDnsProvider provider)
+        {
+            return new DnsZone(provider)
+            {
+                Id = Id,
+                Name = Domain,
+                NameServers = Nameservers
+            };
+        }
     }
 
     public class DomeneShopDomainRecord
