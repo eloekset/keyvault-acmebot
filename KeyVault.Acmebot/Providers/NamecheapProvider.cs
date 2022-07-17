@@ -125,19 +125,6 @@ public class NamecheapProvider : IDnsProvider
     {
         var pagingElement = responseXml.SelectSingleNode(@"/nc:ApiResponse/nc:CommandResponse/nc:Paging", nsMgr);
 
-        return domainListResponse;
-    }
-
-    private void ParseCommonElements(NamecheapPageResponse response, XmlDocument responseXml, XmlNamespaceManager nsMgr)
-    {
-        ParsePagingElement(response, responseXml, nsMgr);
-        ParseBaseElements(response, responseXml, nsMgr);
-    }
-
-    private void ParsePagingElement(NamecheapPageResponse response, XmlDocument responseXml, XmlNamespaceManager nsMgr)
-    {
-        var pagingElement = responseXml.SelectSingleNode(@"/nc:ApiResponse/nc:CommandResponse/nc:Paging", nsMgr);
-
         if (pagingElement != null)
         {
             response.TotalItems = int.Parse(pagingElement.SelectSingleNode(@"nc:TotalItems", nsMgr)?.InnerText);
@@ -166,25 +153,6 @@ public class NamecheapProvider : IDnsProvider
                 });
             }
         }
-    }
-
-        // Parse Warnings
-        var warningElements = responseXml.SelectNodes(@"/nc:ApiResponse/nc:Warnings", nsMgr);
-
-        if (warningElements != null)
-        {
-            foreach (XmlNode warningElement in warningElements)
-            {
-                string warningNumber = warningElement.Attributes["Number"]?.Value;
-                string warningMessage = warningElement.InnerText;
-                response.Warnings.Add(new NamecheapError
-                {
-                    Number = warningNumber,
-                    Message = warningMessage
-                });
-            }
-        }
-    }
 
         // Parse Warnings
         var warningElements = responseXml.SelectNodes(@"/nc:ApiResponse/nc:Warnings", nsMgr);
@@ -400,7 +368,7 @@ public class NamecheapProvider : IDnsProvider
 
         return relativeUri;
     }
-    
+
     private async Task<string> CreateRelativeUriCommonAsync(string command, string clientIp = null)
     {
         if (string.IsNullOrEmpty(clientIp))
