@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApiResponse Status="OK" xmlns="http://api.namecheap.com/xml.response">
+  <Errors />
+  <Warnings />
+  <RequestedCommand>namecheap.domains.getlist</RequestedCommand>
+  <CommandResponse Type="namecheap.domains.getList">
+    <DomainGetListResult>
+      <Domain ID="349" Name="example21.com" User="apiuser1" Created="08/14/2012" Expires="08/14/2022" IsExpired="false" IsLocked="false" AutoRenew="true" WhoisGuard="ENABLED" IsPremium="false" IsOurDNS="true" />
+      <Domain ID="350" Name="example22.com" User="apiuser1" Created="08/14/2012" Expires="08/14/2022" IsExpired="false" IsLocked="false" AutoRenew="true" WhoisGuard="ENABLED" IsPremium="false" IsOurDNS="true" />
+      <Domain ID="351" Name="example23.com" User="apiuser1" Created="09/21/2018" Expires="09/21/2022" IsExpired="false" IsLocked="false" AutoRenew="true" WhoisGuard="ENABLED" IsPremium="false" IsOurDNS="true" />
+      <Domain ID="352" Name="example24.com" User="apiuser1" Created="08/14/2012" Expires="08/14/2022" IsExpired="false" IsLocked="false" AutoRenew="true" WhoisGuard="ENABLED" IsPremium="false" IsOurDNS="true" />
+      <Domain ID="353" Name="example25.com" User="apiuser1" Created="08/14/2012" Expires="08/14/2022" IsExpired="false" IsLocked="false" AutoRenew="true" WhoisGuard="ENABLED" IsPremium="false" IsOurDNS="true" />
+      <Domain ID="354" Name="example26.com" User="apiuser1" Created="09/21/2018" Expires="09/21/2022" IsExpired="false" IsLocked="false" AutoRenew="true" WhoisGuard="ENABLED" IsPremium="false" IsOurDNS="true" />
+      <Domain ID="355" Name="example27.com" User="apiuser1" Created="08/14/2012" Expires="08/14/2022" IsExpired="false" IsLocked="false" AutoRenew="true" WhoisGuard="ENABLED" IsPremium="false" IsOurDNS="true" />
+      <Domain ID="356" Name="example28.com" User="apiuser1" Created="08/14/2012" Expires="08/14/2022" IsExpired="false" IsLocked="false" AutoRenew="true" WhoisGuard="ENABLED" IsPremium="false" IsOurDNS="true" />
+      <Domain ID="357" Name="example29.com" User="apiuser1" Created="09/21/2018" Expires="09/21/2022" IsExpired="false" IsLocked="false" AutoRenew="true" WhoisGuard="ENABLED" IsPremium="false" IsOurDNS="true" />
+      <Domain ID="358" Name="example30.com" User="apiuser1" Created="08/14/2012" Expires="08/14/2022" IsExpired="false" IsLocked="false" AutoRenew="true" WhoisGuard="ENABLED" IsPremium="false" IsOurDNS="true" />
+      <Domain ID="359" Name="example31.com" User="apiuser1" Created="08/14/2012" Expires="08/14/2022" IsExpired="false" IsLocked="false" AutoRenew="true" WhoisGuard="ENABLED" IsPremium="false" IsOurDNS="true" />
+      <Domain ID="360" Name="example32.com" User="apiuser1" Created="09/21/2018" Expires="09/21/2022" IsExpired="false" IsLocked="false" AutoRenew="true" WhoisGuard="ENABLED" IsPremium="false" IsOurDNS="true" />
+      <Domain ID="361" Name="example33.com" User="apiuser1" Created="08/14/2012" Expires="08/14/2022" IsExpired="false" IsLocked="false" AutoRenew="true" WhoisGuard="ENABLED" IsPremium="false" IsOurDNS="true" />
+      <Domain ID="362" Name="example34.com" User="apiuser1" Created="08/14/2012" Expires="08/14/2022" IsExpired="false" IsLocked="false" AutoRenew="true" WhoisGuard="ENABLED" IsPremium="false" IsOurDNS="true" />
+      <Domain ID="363" Name="example35.com" User="apiuser1" Created="09/21/2018" Expires="09/21/2022" IsExpired="false" IsLocked="false" AutoRenew="true" WhoisGuard="ENABLED" IsPremium="false" IsOurDNS="true" />
+      <Domain ID="364" Name="example36.com" User="apiuser1" Created="08/14/2012" Expires="08/14/2022" IsExpired="false" IsLocked="false" AutoRenew="true" WhoisGuard="ENABLED" IsPremium="false" IsOurDNS="true" />
+      <Domain ID="365" Name="example37.com" User="apiuser1" Created="08/14/2012" Expires="08/14/2022" IsExpired="false" IsLocked="false" AutoRenew="true" WhoisGuard="ENABLED" IsPremium="false" IsOurDNS="true" />
+      <Domain ID="366" Name="example38.com" User="apiuser1" Created="09/21/2018" Expires="09/21/2022" IsExpired="false" IsLocked="false" AutoRenew="true" WhoisGuard="ENABLED" IsPremium="false" IsOurDNS="true" />
+      <Domain ID="367" Name="example39.com" User="apiuser1" Created="08/14/2012" Expires="08/14/2022" IsExpired="false" IsLocked="false" AutoRenew="true" WhoisGuard="ENABLED" IsPremium="false" IsOurDNS="true" />
+      <Domain ID="368" Name="example40.com" User="apiuser1" Created="08/14/2012" Expires="08/14/2022" IsExpired="false" IsLocked="false" AutoRenew="true" WhoisGuard="ENABLED" IsPremium="false" IsOurDNS="true" />
+    </DomainGetListResult>
+    <Paging>
+      <TotalItems>43</TotalItems>
+      <CurrentPage>2</CurrentPage>
+      <PageSize>20</PageSize>
+    </Paging>
+  </CommandResponse>
+  <Server>PHX01APIEXT12</Server>
+  <GMTTimeDifference>--4:00</GMTTimeDifference>
+  <ExecutionTime>0.013</ExecutionTime>
+</ApiResponse>
