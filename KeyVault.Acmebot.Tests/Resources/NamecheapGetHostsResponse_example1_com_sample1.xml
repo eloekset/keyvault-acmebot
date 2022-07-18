@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApiResponse Status="OK" xmlns="http://api.namecheap.com/xml.response">
+  <Errors />
+  <Warnings />
+  <RequestedCommand>namecheap.domains.dns.gethosts</RequestedCommand>
+  <CommandResponse Type="namecheap.domains.dns.getHosts">
+    <DomainDNSGetHostsResult Domain="example1.com" EmailType="FWD" IsUsingOurDNS="true">
+      <host HostId="162122788" Name="@" Type="A" Address="51.120.98.140" MXPref="10" TTL="1799" AssociatedAppTitle="" FriendlyName="" IsActive="true" IsDDNSEnabled="false" />
+      <host HostId="176237257" Name="proxmox" Type="A" Address="80.90.150.60" MXPref="10" TTL="1799" AssociatedAppTitle="" FriendlyName="" IsActive="true" IsDDNSEnabled="false" />
+      <host HostId="269335026" Name="rdp" Type="A" Address="80.90.150.60" MXPref="10" TTL="1799" AssociatedAppTitle="" FriendlyName="" IsActive="true" IsDDNSEnabled="false" />
+      <host HostId="211238183" Name="prometheus.srv-1" Type="AAAA" Address="2001:4646:6035:0:b883:a458:34c8:1218" MXPref="10" TTL="1799" AssociatedAppTitle="" FriendlyName="" IsActive="true" IsDDNSEnabled="false" />
+      <host HostId="203542921" Name="@" Type="CNAME" Address="example1.azurewebsites.net." MXPref="10" TTL="1799" AssociatedAppTitle="" FriendlyName="" IsActive="true" IsDDNSEnabled="false" />
+      <host HostId="204325083" Name="test" Type="CNAME" Address="test-example1.azurewebsites.net." MXPref="10" TTL="1799" AssociatedAppTitle="" FriendlyName="" IsActive="true" IsDDNSEnabled="false" />
+      <host HostId="210458003" Name="dashboard" Type="CNAME" Address="superduperdashboard.azurewebsites.net." MXPref="10" TTL="1799" AssociatedAppTitle="" FriendlyName="" IsActive="true" IsDDNSEnabled="false" />
+      <host HostId="205321347" Name="teststatic" Type="CNAME" Address="calm-hill-0d24b1a03.azurestaticapps.net." MXPref="10" TTL="1799" AssociatedAppTitle="" FriendlyName="" IsActive="true" IsDDNSEnabled="false" />
+      <host HostId="434453967" Name="www" Type="CNAME" Address="example1.azurewebsites.net." MXPref="10" TTL="1799" AssociatedAppTitle="" FriendlyName="" IsActive="true" IsDDNSEnabled="false" />
+      <host HostId="156656991" Name="@" Type="TXT" Address="example1.azurewebsites.net." MXPref="10" TTL="1799" AssociatedAppTitle="" FriendlyName="" IsActive="true" IsDDNSEnabled="false" />
+      <host HostId="217662467" Name="_acme-challenge.test" Type="TXT" Address="ZGU1YmE5MDgtZmM3My00ZjZlLTk4OTItMTkxMjhjOWY5ZTg4" MXPref="10" TTL="1799" AssociatedAppTitle="" FriendlyName="" IsActive="true" IsDDNSEnabled="false" />
+      <host HostId="217232496" Name="_acme-challenge.dashboard" Type="TXT" Address="YzU1MDhjMTYtMzY2Ny00NWMyLWFlOWMtNDQ5ODI0NGYyZWQw" MXPref="10" TTL="1799" AssociatedAppTitle="" FriendlyName="" IsActive="true" IsDDNSEnabled="false" />
+      <host HostId="217242524" Name="_acme-challenge.www" Type="TXT" Address="NDRmYzM4NDctNWNlOS00MDcwLWFmNzktYTdlYTU5NWY3ZDY4" MXPref="10" TTL="1799" AssociatedAppTitle="" FriendlyName="" IsActive="true" IsDDNSEnabled="false" />
+      <host HostId="208343834" Name="_github-challenge-test-example-com.test" Type="TXT" Address="b512cb1ce5" MXPref="10" TTL="1799" AssociatedAppTitle="" FriendlyName="" IsActive="true" IsDDNSEnabled="false" />
+      <host HostId="434434966" Name="@" Type="URL" Address="https://www.example1.com" MXPref="10" TTL="1799" AssociatedAppTitle="" FriendlyName="URL" IsActive="true" IsDDNSEnabled="false" />
+    </DomainDNSGetHostsResult>
+  </CommandResponse>
+  <Server>PHX01APIEXT12</Server>
+  <GMTTimeDifference>--4:00</GMTTimeDifference>
+  <ExecutionTime>0.404</ExecutionTime>
+</ApiResponse>
