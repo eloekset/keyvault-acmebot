@@ -201,7 +201,7 @@ public class NamecheapProvider : IDnsProvider
         NamecheapGetHostsResponse getHostsResponse = await GetHosts(zone, clientIp);
 
         // Remove the host that we should delete. If not found, assume it's already deleted.
-        var hostToDelete = getHostsResponse.Hosts.Where(h => h.Address == relativeRecordName).FirstOrDefault();
+        var hostToDelete = getHostsResponse.Hosts.Where(h => h.HostName == relativeRecordName).FirstOrDefault();
 
         if (hostToDelete != null)
         {
