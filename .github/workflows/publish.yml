@@ -68,10 +68,10 @@ jobs:
 
     - name: Upload to Blob
       run: |
-        az storage blob upload --auth-mode login -f latest.zip --account-name stpubeivind -c keyvault-acmebot -n v4/latest.zip --overwrite
-        az storage blob upload --auth-mode login -f latest.zip --account-name stpubeivind -c keyvault-acmebot -n v4/${{ needs.publish.outputs.version }}.zip --overwrite
+        az storage blob upload --auth-mode login -f latest.zip --account-name stpubeivind2 -c keyvault-acmebot -n v4/latest.zip --overwrite
+        az storage blob upload --auth-mode login -f latest.zip --account-name stpubeivind2 -c keyvault-acmebot -n v4/${{ needs.publish.outputs.version }}.zip --overwrite
 
     - name: Publish to Private Registry
       run: |
-        az bicep publish --file azuredeploy.bicep --target br:eivindshared.azurecr.io/bicep/modules/keyvault-acmebot:v4 --force
-        az bicep publish --file azuredeploy.bicep --target br:eivindshared.azurecr.io/bicep/modules/keyvault-acmebot:v${{ needs.publish.outputs.version }} --force
+        az bicep publish --file azuredeploy.bicep --target br:eivind.azurecr.io/bicep/modules/keyvault-acmebot:v4 --force
+        az bicep publish --file azuredeploy.bicep --target br:eivind.azurecr.io/bicep/modules/keyvault-acmebot:v${{ needs.publish.outputs.version }} --force
